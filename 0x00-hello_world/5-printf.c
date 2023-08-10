@@ -1,6 +1,11 @@
 #include <stdio.h>
-
-int main() {
-    puts("with proper grammar, but the outcome is a piece of art,\n"); // Outputs "Hello, World!" followed by a newline
-    return 0;
+/**
+ * main - Prints out a string to stdout.
+ * Return: 0 if success.
+ */
+int main(void)
+{
+	printf("with proper grammar, but the outcome is a piece of art,\n");
+	return (0);
 }
+
