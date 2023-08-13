@@ -8,25 +8,28 @@
  */
 int main(void)
 {
-    int i = '0';
-    int j = '1';
+	int i = '0';
+    int j = '0';
+
     for (i = '0' ; i < '9'; i++)
     {
         for (j = '1'; j <= '9'; j++)
         {
             /* code */
-            putchar(i);
-            putchar(j);
-	    if (i == '8' && j == '9')
-	    {
-		putchar('\n');
-	    }
-	    else
-	    {
-            putchar(' ');
-            putchar(',');
-	    }
+           if (j>i)
+            {
+                /* code */
+                putchar(i);
+                putchar(j);
+                putchar(' ');
+                if (i != '8' && j != '9')
+                {
+                   putchar(',');
+                }
+
+            }
+
         }
-     }
-     return (0);
+    }
+    return (0);
 }
