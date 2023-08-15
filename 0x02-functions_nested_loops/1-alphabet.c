@@ -2,9 +2,8 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * main -
-(*
- * Return: 0 on success
+ *print_alphabet - prints the english alphabet from a-z.
+ * Return: Nothing.
  */
 void print_alphabet(void)
 {
