@@ -19,7 +19,8 @@ void print_alphabet_x10(void)
 			/* code */
 			_putchar(c);
 		}
+		_putchar('\n');
 	}
-	_putchar('\n');
+
 }
 
