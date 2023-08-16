@@ -5,14 +5,11 @@
 /**
  *positive_or_negative - Determine if a random number.
  *Return: 0 on success
- *@n : for number.
+ *@i : for number.
  */
 
-void positive_or_negative(int n)
+void positive_or_negative(int i)
 {
-	int n;
-
-	/* your code goes there */
 	if (n < 0)
 	{
 		printf("%d is %s\n", n, "negative");
