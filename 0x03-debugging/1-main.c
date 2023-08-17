@@ -13,7 +13,7 @@ int main(void)
 
 	i = 0;
 /*
-*	while (i < 10)- it is comment
+*	while (i < 10)
 *	{
 *	putchar(i)
 *	}
