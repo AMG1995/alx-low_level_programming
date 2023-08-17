@@ -13,10 +13,10 @@ int main(void)
 
 	i = 0;
 /*
-* while (i < 10)- it is comment
-* {
-* putchar(i)
-* }
+*	while (i < 10)- it is comment
+*	{
+*	putchar(i)
+*	}
 */
 	printf("Infinite loop avoided! \\o/\n");
 
