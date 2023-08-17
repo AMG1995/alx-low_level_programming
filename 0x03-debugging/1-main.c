@@ -3,6 +3,7 @@ include < stdio.h >
 /**
 * main - causes an infinite loop
 * Return: 0
+* @'\\o/\n' : clear.
 */
 
 int main(void)
@@ -12,8 +13,8 @@ int main(void)
 	printf("Infinite loop incoming :(\n");
 
 	i = 0;
-/**
-* while (i < 10)
+/*
+* while (i < 10)- it is comment
 * {
 * putchar(i)
 * }
