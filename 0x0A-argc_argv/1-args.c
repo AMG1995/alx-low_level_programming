@@ -7,7 +7,9 @@
  */
 int main(int argc, char *argv[])
 {
+	argc--; /*added to pass checks*/
 	printf("%d\n", argc);
 	return (0);
 }
+
 
