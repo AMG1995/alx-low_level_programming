@@ -14,7 +14,4 @@ int _strlen(char *s);
 int is_digit(char *s);
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 
-<<<<<<< HEAD
-=======
 #endif
->>>>>>> 549e80ff5e2ff36fd77174ddd787aec3bd854f53
