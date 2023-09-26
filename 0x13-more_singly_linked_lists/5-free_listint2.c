@@ -1,26 +1,28 @@
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 #include "lists.h"
 
 /**
- *free_listint2 - frees
- *@head: pointer
+ * main - check the code
  *
- *Return: void
+ * Return: Always 0.
  */
-
-void free_listint2(listint_t **head)
+int main(void)
 {
-	listint_t *cursor;
-	listint_t **temp = head;
+    listint_t *head;
 
-	if (temp != NULL)
-	{
-		while (*head != NULL)
-		{
-			cursor = *head;
-			free(cursor);
-			*head = (*head)->next;
-		}
-
-		*temp = NULL;
-	}
+    head = NULL;
+    add_nodeint_end(&head, 0);
+    add_nodeint_end(&head, 1);
+    add_nodeint_end(&head, 2);
+    add_nodeint_end(&head, 3);
+    add_nodeint_end(&head, 4);
+    add_nodeint_end(&head, 98);
+    add_nodeint_end(&head, 402);
+    add_nodeint_end(&head, 1024);
+    print_listint(head);
+    free_listint2(&head);
+    printf("%p\n", (void *)head);
+    return (0);
 }
