@@ -1,10 +1,10 @@
-#include "holberton.h"
+#include "main.h"
 #include <stdio.h>
 
 /**
- * _len - Give me the length of my string.
- * @s: My string.
- * Return: Len Of my string.
+ * _len - Give me the length of the string.
+ * @s: the string.
+ * Return: Len Of the string.
  */
 int _len(char *s)
 {
