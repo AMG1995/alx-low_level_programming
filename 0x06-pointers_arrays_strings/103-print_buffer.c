@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * print_buffer - Prints a buffer with an
+ * print_buffer - Prints the buffer with an
  * hexadecimal format
  * @b: buffer to print
  * @size: Size of the buffer
