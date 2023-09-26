@@ -1,7 +1,7 @@
 /**
  * infinite_add - Adds two numbers
- * @n1: Pointer to the first character of number 1
- * @n2: Pointer to the first character of number 2
+ * @n1: Pointer the first character of number 1
+ * @n2: Pointer the first character of number 2
  * @r: Buffer where to write the result
  * @n: Buffer size
  *
