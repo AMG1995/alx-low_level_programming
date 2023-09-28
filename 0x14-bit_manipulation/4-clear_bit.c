@@ -1,24 +1,17 @@
 #include "main.h"
 
 /**
- * flip_bits - Returns the number of bits to flip to get from n to m.
- * @n: The first unsigned long integer.
- * @m: The second unsigned long integer.
+ * clear_bit - sets the value of a given bit to 0
+ * @n: pointer to the number to change
+ * @index: index of the bit to clear
  *
- * Return: The number of bits to flip.
+ * Return: 1 for success, -1 for failure
  */
-unsigned int flip_bits(unsigned long int n, unsigned long int m)
+int clear_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned long int xor_result = n ^ m;
-	unsigned int count = 0;
+	if (index > 63)
+		return (-1);
 
-	while (xor_result != 0)
-	{
-		/* Increment count for each set bit (1) in xor_result */
-		count += xor_result & 1;
-		/* Right-shift xor_result to check the next bit */
-		xor_result >>= 1;
-	}
-
-	return (count);
+	*n = (~(1UL << index) & *n);
+	return (1);
 }
