@@ -34,7 +34,7 @@ int main(void)
 	unsigned int result2 = binary_to_uint(binaryStr2);
 
 	printf("Result 1: %u\n", result1); /* Expected result: 13 */
-	printf("Result 2: %u\n", result2); /* Expected result: 0 (due to invalid characters) */
+	printf("Result 2: %u\n", result2);
 
 	return (0);
 }
