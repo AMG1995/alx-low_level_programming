@@ -24,17 +24,3 @@ unsigned int binary_to_uint(const char *b)
 
 	return (result);
 }
-
-int main(void)
-{
-	const char *binaryStr1 = "1101"; /* Binary: 1101 (13 in decimal) */
-	const char *binaryStr2 = "10102"; /* Invalid binary string */
-
-	unsigned int result1 = binary_to_uint(binaryStr1);
-	unsigned int result2 = binary_to_uint(binaryStr2);
-
-	printf("Result 1: %u\n", result1); /* Expected result: 13 */
-	printf("Result 2: %u\n", result2);
-
-	return (0);
-}
