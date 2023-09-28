@@ -1,31 +1,27 @@
-#include main.h
+#include "main.h"
 
 /**
- * print_binary - Prints the binary representation of a number.
- * @n: The number to be printed in binary.
+ * print_binary - prints the binary equivalent of a decimal number
+ * @n: number to print in binary
  */
 void print_binary(unsigned long int n)
 {
-	int bit_position;
+	int i, count = 0;
+	unsigned long int current;
 
-	if (n == 0)
+	for (j = 63; j >= 0; j--)
 	{
-		_putchar('0');
-		return;
-	}
+		current = n >> j;
 
-	/* Find the leftmost '1' bit in n */
-	bit_position = sizeof(unsigned long int) * 8 - 1;
-	while ((n & (1UL << bit_position)) == 0)
-		bit_position--;
-
-	/* Print binary representation starting from the leftmost '1' bit */
-	while (bit_position >= 0)
-	{
-		if (n & (1UL << bit_position))
+		if (current & 1)
+		{
 			_putchar('1');
-		else
+			count++;
+		}
+		else if (count)
 			_putchar('0');
-		bit_position--;
 	}
+	if (!count)
+		_putchar('0');
 }
+
