@@ -22,7 +22,7 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	if (fd == -1)
 	{
-		/* Check if the file exists (O_CREAT | O_EXCL is used to avoid creating it) */
+		/* Check if the file exists */
 		fd = open(filename, O_CREAT | O_EXCL, 0600);
 
 		if (fd == -1)
@@ -47,7 +47,7 @@ int append_text_to_file(const char *filename, char *text_content)
 		}
 	}
 
-	/* Close the file and return success */
+	/* Close the file */
 	close(fd);
 
 	if (file_exists)
